@@ -131,7 +131,7 @@ export const ContactSection = () => {
                   name="name"
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
-                  placeholder="john doe..."
+                  placeholder="Enter Your name..."
                 />
               </div>
 
@@ -149,7 +149,7 @@ export const ContactSection = () => {
                   name="email"
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
-                  placeholder="abc@gmail.com"
+                  placeholder="Enter Your mail..."
                 />
               </div>
 
