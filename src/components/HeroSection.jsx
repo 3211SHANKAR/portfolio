@@ -17,7 +17,7 @@ export const HeroSection = () => {
   <img
     src="/myprofile.jpg"
     alt="Project or Profile"
-    className="w-full h-90 object-cover"
+    className="w-full h-full object-cover"
   />
 </div>
 
