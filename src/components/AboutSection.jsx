@@ -33,7 +33,7 @@ As a passionate and dedicated web development enthusiast, I specialize in creati
               </a>
 
               <a
-                href="https://drive.google.com/file/d/1q9Ca13iv-HayABjEz5NjulaBZ4LOx3EX/view?usp=sharing"
+                href="https://drive.google.com/drive/folders/1YySXmwvKuLyrku8nQc5vzQACdkXUvm2k?usp=sharing"
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
               >
                 Download CV
