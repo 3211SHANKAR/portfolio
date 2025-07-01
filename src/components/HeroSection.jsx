@@ -15,7 +15,7 @@ export const HeroSection = () => {
 
    <div className="w-40 sm:w-60 md:w-72 aspect-square border border-zinc-500 rounded-full overflow-hidden bg-zinc-600 mx-auto">
   <img
-    src="/myprofile.jpg"
+    src="/myprofile.png"
     alt="Project or Profile"
     className="w-full h-full object-cover"
   />
