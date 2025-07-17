@@ -10,26 +10,39 @@ const projects = [
   //   demoUrl: "#",
   //   githubUrl: "#",
   // },
-  // {
-  //   id: 2,
-  //   title: "Orbit Analytics Dashboard",
-  //   description:
-  //     "Interactive analytics dashboard with data visualization and filtering capabilities.",
-  //   image: "/projects/project2.png",
-  //   tags: ["TypeScript", "D3.js", "Next.js"],
-  //   demoUrl: "#",
-  //   githubUrl: "#",
-  // },
   {
-    id: 3,
-    title: "E-commerce Platform(E-mandi)",
-    description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
-    image: "/projects/project3.png",
-    tags: ["React", "Node.js"],
-    demoUrl: "#",
-    githubUrl: "#",
-  },
+  id: 2,
+  title: "Pixby - AI Image Finder & Generator",
+  description:
+    "Pixby is a powerful image finder and generator that lets users explore and download free images by keywords like nature, horror, heroes, cars, and more. It also features AI-generated image creation, a funny sticker generator, and a dark mode toggle for an enhanced user experience.",
+  image: "/projects/project2.png", // update this to match your actual image path
+  tags: ["Next.js", "TypeScript", "AI", "Tailwind CSS"],
+  demoUrl: "https://pixby-ai.vercel.app/", 
+  githubUrl: "https://github.com/3211SHANKAR/pixbyAI", 
+},
+
+  {
+  id: 3,
+  title: "E-MANDI - Digital Vegetable Market",
+  description:
+    "A full-featured e-commerce platform built using the MERN stack (MongoDB, Express, React, Node.js). E-MANDI connects farmers, wholesalers, retailers, and civilians to enable transparent vegetable trading with user authentication, real-time updates, and payment integration.",
+  image: "/projects/project3.png", // update this with your actual image path
+  tags: ["MongoDB", "Express", "React", "Node.js"],
+  demoUrl: "https://your-live-demo-link.com", // replace with actual live link
+  githubUrl: "https://github.com/3211SHANKAR/emandi", // replace with your GitHub repo link
+},
+
+  {
+  id: 4,
+  title: "AI Chatbot & PDF Summarizer",
+  description:
+    "An intelligent AI-powered chatbot built with Gemini API that also supports AI-based PDF summarization and reading. Designed for seamless interaction and productivity.",
+  image: "/projects/project4.png", // update this path to your actual image
+  tags: ["Next.js", "Gemini API", "AI", "Tailwind CSS"],
+  demoUrl: "https://gen-aiprojects.vercel.app/", // replace with your actual live link
+  githubUrl: "https://github.com/3211SHANKAR/GenAiprojects", // replace with your GitHub repo
+}
+
 ];
 
 export const ProjectsSection = () => {

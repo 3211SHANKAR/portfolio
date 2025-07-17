@@ -34,8 +34,8 @@ export const HeroSection = () => {
                     </h1>
 
                     <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-                        I enjoy working with React, JavaScript, Tailwind, and other tools that help bring designs to life.
-                        From clean layouts to smooth animations, I focus on building pixel-perfect interfaces that are both beautiful and functional. Let's build something amazing together!
+                       I'm a full-stack web developer passionate about building modern, user-centric web applications.
+                        I specialize in React, Next.js, JavaScript, Tailwind CSS on the frontend, and Node.js, Express, and MongoDB on the backend.
                     </p>
 
                     <div className="pt-4 opacity-0 animate-fade-in-delay-4">
