@@ -21,16 +21,17 @@ const projects = [
   githubUrl: "https://github.com/3211SHANKAR/pixbyAI", 
 },
 
-  {
+{
   id: 3,
-  title: "E-MANDI - Digital Vegetable Market",
+  title: "ViteFlow - Online Chat Application",
   description:
-    "A full-featured e-commerce platform built using the MERN stack (MongoDB, Express, React, Node.js). E-MANDI connects farmers, wholesalers, retailers, and civilians to enable transparent vegetable trading with user authentication, real-time updates, and payment integration.",
-  image: "/projects/project3.png", // update this with your actual image path
-  tags: ["MongoDB", "Express", "React", "Node.js"],
-  demoUrl: "https://your-live-demo-link.com", // replace with actual live link
-  githubUrl: "https://github.com/3211SHANKAR/emandi", // replace with your GitHub repo link
-},
+    "A real-time online chat application built using the MERN stack (MongoDB, Express, React, Node.js) with Socket.io for instant messaging. ViteFlow allows users to create accounts, log in securely, and chat with friends in real-time with smooth and responsive UI. Features include user authentication, real-time communication, and scalable backend architecture.",
+  image: "/projects/project3.jpg", // update this with your actual image path
+  tags: ["MongoDB", "Express", "React", "Node.js", "Socket.io"],
+  demoUrl: "https://viteflow.vercel.app/login", 
+  githubUrl: "https://github.com/3211SHANKAR/viteflow",
+}
+,
 
   {
   id: 4,
