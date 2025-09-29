@@ -1,49 +1,36 @@
 import { ArrowRight, ExternalLink, Github } from "lucide-react";
 
 const projects = [
-  // {
-  //   id: 1,
-  //   title: "SaaS Landing Page",
-  //   description: "A beautiful landing page app using React and Tailwind.",
-  //   image: "/projects/project1.png",
-  //   tags: ["React", "TailwindCSS", "Supabase"],
-  //   demoUrl: "#",
-  //   githubUrl: "#",
-  // },
   {
-  id: 2,
-  title: "Pixby - AI Image Finder & Generator",
-  description:
-    "Pixby is a powerful image finder and generator that lets users explore and download free images by keywords like nature, horror, heroes, cars, and more. It also features AI-generated image creation, a funny sticker generator, and a dark mode toggle for an enhanced user experience.",
-  image: "/projects/project2.png", // update this to match your actual image path
-  tags: ["Next.js", "TypeScript", "AI", "Tailwind CSS"],
-  demoUrl: "https://pixby-ai.vercel.app/", 
-  githubUrl: "https://github.com/3211SHANKAR/pixbyAI", 
-},
-
-{
-  id: 3,
-  title: "ViteFlow - Online Chat Application",
-  description:
-    "A real-time online chat application built using the MERN stack (MongoDB, Express, React, Node.js) with Socket.io for instant messaging. ViteFlow allows users to create accounts, log in securely, and chat with friends in real-time with smooth and responsive UI. Features include user authentication, real-time communication, and scalable backend architecture.",
-  image: "/projects/project3.jpg", // update this with your actual image path
-  tags: ["MongoDB", "Express", "React", "Node.js", "Socket.io"],
-  demoUrl: "https://viteflow.vercel.app/login", 
-  githubUrl: "https://github.com/3211SHANKAR/viteflow",
-}
-,
-
+    id: 2,
+    title: "Pixby - AI Image Finder & Generator",
+    description:
+      "Pixby is a powerful image finder and generator that lets users explore and download free images by keywords like nature, horror, heroes, cars, and more. It also features AI-generated image creation, a funny sticker generator, and a dark mode toggle for an enhanced user experience.",
+    image: "/projects/project2.png",
+    tags: ["Next.js", "TypeScript", "AI", "Tailwind CSS"],
+    demoUrl: "https://pixby-ai.vercel.app/",
+    githubUrl: "https://github.com/3211SHANKAR/pixbyAI",
+  },
   {
-  id: 4,
-  title: "AI Chatbot & PDF Summarizer",
-  description:
-    "An intelligent AI-powered chatbot built with Gemini API that also supports AI-based PDF summarization and reading. Designed for seamless interaction and productivity.",
-  image: "/projects/project4.png", // update this path to your actual image
-  tags: ["Next.js", "Gemini API", "AI", "Tailwind CSS"],
-  demoUrl: "https://gen-aiprojects.vercel.app/", // replace with your actual live link
-  githubUrl: "https://github.com/3211SHANKAR/GenAiprojects", // replace with your GitHub repo
-}
-
+    id: 3,
+    title: "ViteFlow - Online Chat Application",
+    description:
+      "A real-time online chat application built using the MERN stack (MongoDB, Express, React, Node.js) with Socket.io for instant messaging. ViteFlow allows users to create accounts, log in securely, and chat with friends in real-time with smooth and responsive UI.",
+    image: "/projects/project3.jpg",
+    tags: ["MongoDB", "Express", "React", "Node.js", "Socket.io"],
+    demoUrl: "https://viteflow.vercel.app/login",
+    githubUrl: "https://github.com/3211SHANKAR/viteflow",
+  },
+  {
+    id: 4,
+    title: "AI Chatbot & PDF Summarizer",
+    description:
+      "An intelligent AI-powered chatbot built with Gemini API that also supports AI-based PDF summarization and reading. Designed for seamless interaction and productivity.",
+    image: "/projects/project4.png",
+    tags: ["Next.js", "Gemini API", "AI", "Tailwind CSS"],
+    demoUrl: "https://gen-aiprojects.vercel.app/",
+    githubUrl: "https://github.com/3211SHANKAR/GenAiprojects",
+  },
 ];
 
 export const ProjectsSection = () => {
@@ -51,7 +38,6 @@ export const ProjectsSection = () => {
     <section id="projects" className="py-24 px-4 relative">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-          {" "}
           Featured <span className="text-primary"> Projects </span>
         </h2>
 
@@ -61,9 +47,9 @@ export const ProjectsSection = () => {
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, key) => (
+          {projects.map((project) => (
             <div
-              key={key}
+              key={project.id}
               className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
             >
               <div className="h-48 overflow-hidden">
@@ -76,8 +62,11 @@ export const ProjectsSection = () => {
 
               <div className="p-6">
                 <div className="flex flex-wrap gap-2 mb-4">
-                  {project.tags.map((tag) => (
-                    <span className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground">
+                  {project.tags.map((tag, i) => (
+                    <span
+                      key={i}
+                      className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground"
+                    >
                       {tag}
                     </span>
                   ))}
@@ -92,14 +81,18 @@ export const ProjectsSection = () => {
                     <a
                       href={project.demoUrl}
                       target="_blank"
+                      rel="noopener noreferrer"
                       className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                      aria-label={`Open demo for ${project.title}`}
                     >
                       <ExternalLink size={20} />
                     </a>
                     <a
-                      href={"https://github.com/3211SHANKAR/emandi"}
+                      href={project.githubUrl}
                       target="_blank"
+                      rel="noopener noreferrer"
                       className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                      aria-label={`Open GitHub repo for ${project.title}`}
                     >
                       <Github size={20} />
                     </a>
@@ -114,6 +107,7 @@ export const ProjectsSection = () => {
           <a
             className="cosmic-button w-fit flex items-center mx-auto gap-2"
             target="_blank"
+            rel="noopener noreferrer"
             href="https://github.com/3211SHANKAR"
           >
             Check My Github <ArrowRight size={16} />
