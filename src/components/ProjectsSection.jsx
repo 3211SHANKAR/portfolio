@@ -6,7 +6,7 @@ const projects = [
     title: "Pixby - AI Image Finder & Generator",
     description:
       "Pixby is a powerful image finder and generator that lets users explore and download free images by keywords like nature, horror, heroes, cars, and more. It also features AI-generated image creation, a funny sticker generator, and a dark mode toggle for an enhanced user experience.",
-    image: "/projects/project2.png",
+    image: "/project2.png",
     tags: ["Next.js", "TypeScript", "AI", "Tailwind CSS"],
     demoUrl: "https://pixby-ai.vercel.app/",
     githubUrl: "https://github.com/3211SHANKAR/pixbyAI",
@@ -16,7 +16,7 @@ const projects = [
     title: "ViteFlow - Online Chat Application",
     description:
       "A real-time online chat application built using the MERN stack (MongoDB, Express, React, Node.js) with Socket.io for instant messaging. ViteFlow allows users to create accounts, log in securely, and chat with friends in real-time with smooth and responsive UI.",
-    image: "/projects/project3.jpg",
+    image: "/project3.jpg",
     tags: ["MongoDB", "Express", "React", "Node.js", "Socket.io"],
     demoUrl: "https://viteflow.vercel.app/login",
     githubUrl: "https://github.com/3211SHANKAR/viteflow",
@@ -26,7 +26,7 @@ const projects = [
     title: "AI Chatbot & PDF Summarizer",
     description:
       "An intelligent AI-powered chatbot built with Gemini API that also supports AI-based PDF summarization and reading. Designed for seamless interaction and productivity.",
-    image: "/projects/project4.png",
+    image: "/project4.png",
     tags: ["Next.js", "Gemini API", "AI", "Tailwind CSS"],
     demoUrl: "https://gen-aiprojects.vercel.app/",
     githubUrl: "https://github.com/3211SHANKAR/GenAiprojects",
